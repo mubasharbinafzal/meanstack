@@ -1,0 +1,8 @@
+Q:1 what is morgan 
+
+ans:- morgan is a middle vare before the listen server
+server error code red 
+client error code yellow
+
+Q:2 what is model
+ans- How you want to data in database is called model
