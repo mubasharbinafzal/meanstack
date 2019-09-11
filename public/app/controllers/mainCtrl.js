@@ -28,7 +28,7 @@ angular.module('mainController',['authServices','userServices'])
                  if(timecheck <= 1800 ){
                      app.checkingSession = true;
                      console.log('token has expire');
-                     showModal(1);
+                     showModal(2);
                      $interval.cancel(interval);
                  }else{
                      console.log('token not yet expired');
