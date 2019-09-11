@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + '/public'));
 app.use('/api',appRoutes);
 
-mongoose.connect('mongodb://mubasharafzal:chaudhary391@ds229312.mlab.com:29312/tutorial',{ useNewUrlParser: true },function(err){
+mongoose.connect('mongodb://mubashar:mubashar1@ds135726.mlab.com:35726/tutorial1',{ useNewUrlParser: true },function(err){
     if(err){
         console.log("Not connected to database"+ err);
     }else{
