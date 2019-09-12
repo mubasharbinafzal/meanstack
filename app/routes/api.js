@@ -67,7 +67,7 @@ module.exports = function (router) {
                           to: user.email,
                           subject: 'Local host Actication Link',
                           text: 'Hello'+ user.name +' Thankyou for registering at localhost.com please click on the following link to complete your activation ',
-                          html: 'Hello <strong>'+ user.name +'</strong>,<br><br> Thankyou for registering at localhost.com please click on the link below to complete your activation :<br><br> <a href="http://localhost:8080/activate/'+user.temporarytoken+ '">http://localhost:8080/activate/</a>'
+                          html: 'Hello <strong>'+ user.name +'</strong>,<br><br> Thankyou for registering at localhost.com please click on the link below to complete your activation :<br><br> <a href="https://meanstackapplicaion.herokuapp.com/activate/'+user.temporarytoken+ '">https://meanstackapplicaion.herokuapp.com/activate/</a>'
                         };
                         client.sendMail(email, function(err, info){
                             if (err){
