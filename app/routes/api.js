@@ -10,8 +10,8 @@ module.exports = function (router) {
     var options = {
       auth: {
       
-            api_user: 'mubashar1',
-            api_key: 'Chaudhary391'
+            api_user: 'mubashar2',
+            api_key: 'Mubashar!1'
           //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
       }
     }
@@ -75,6 +75,7 @@ module.exports = function (router) {
                             }
                             else {
                               console.log('Message sent: ' + info.response);
+                                res.json({success: false, message: "sendgrid Account suspended Email was not sent"});
                             }
                         });
                     
@@ -180,6 +181,9 @@ module.exports = function (router) {
                             }
                             else {
                               console.log('Message sent: ' + info.response);
+                                res.json({success: false, message: "sendgrid Account suspended Email was not sent"});
+                                
+                                
                             }
                         });
                            
@@ -247,9 +251,11 @@ module.exports = function (router) {
                             }
                             else {
                               console.log('Message sent: ' + info.response);
+                                res.json({success: false, message: "sendgrid Account suspended Email was not sent"});
                             }
                         });
-                   res.json({success: true , message: "Activation link has been sent to "+user.email +'!'});
+                   
+                   res.json({success: true , message: "Activation link has been sent to "+user.email +' !'});
                    
                }
             });
@@ -281,8 +287,12 @@ module.exports = function (router) {
                             }
                             else {
                               console.log('Message sent: ' + info.response);
+                                res.json({success: false, message: "sendgrid Account suspended Email was not sent"});
                             }
                         });
+                  
+                  
+                  
                   
                   res.json({success: true , message: 'Username has been sent to E-mail'});
               }    
@@ -317,6 +327,7 @@ module.exports = function (router) {
                             }
                             else {
                               console.log('Message sent: ' + info.response);
+                                res.json({success: false, message: "sendgrid Account suspended Email was not sent"});
                             }
                         });
                        
@@ -381,6 +392,7 @@ module.exports = function (router) {
                                         }
                                         else {
                                           console.log('Message sent: ' + info.response);
+                                            res.json({success: false, message: "sendgrid Account suspended Email was not sent"});
                                         }
                                     });
                            
