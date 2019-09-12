@@ -284,9 +284,6 @@ module.exports = function (router) {
                             }
                         });
                   
-                  
-                  
-                  
                   res.json({success: true , message: 'Username has been sent to E-mail'});
               }    
             }  
