@@ -10,8 +10,10 @@ module.exports = function (router) {
     var options = {
       auth: {
       
-            api_user: 'mubashar1',
-            api_key: 'Chaudhary391'
+          //  api_user: 'mubashar1',
+           // api_key: 'Chaudhary391'
+            api_user: 'meanstackdevelpoer',
+            api_key: 'developerno1'
           //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
       }
     }
