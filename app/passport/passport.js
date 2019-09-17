@@ -39,7 +39,7 @@ module.exports = function(app, passport) {
     passport.use(new FacebookStrategy({
     clientID: '155255822006989',
     clientSecret: '7cf1748a82543d3f64ce6264c5cc28b9',
-    callbackURL: "http://localhost:8080/auth/facebook/callback",
+    callbackURL: "https://meanstackapplicaion.herokuapp.com/auth/facebook/callback",
     profileFields: ['id', 'displayName', 'photos', 'email']
   },
   function(accessToken, refreshToken, profile, done) {
@@ -76,7 +76,7 @@ passport.use(new TwitterStrategy({
 passport.use(new GoogleStrategy({
     clientID: '527820948034-dohs9k9daltdjfe1oupfp70blapfgtnc.apps.googleusercontent.com',
     clientSecret: 'W5Xyf5N4Bky9Jwp-Ez1_Fk0A',
-    callbackURL: "http://localhost:8080/auth/google/callback"
+    callbackURL: "https://meanstackapplicaion.herokuapp.com/auth/google/callback"
   },
   function(accessToken, refreshToken, profile, done) {
     User.findOne({email :profile.emails[0].value}).select('username active password email').exec(function(err,user){
