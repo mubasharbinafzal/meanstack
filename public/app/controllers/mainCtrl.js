@@ -161,7 +161,9 @@ angular.module('mainController',['authServices','userServices'])
     
         this.google = function(){
              app.disabled  = true;
-        $window.location = $window.location.protocol + '//' + $window.location.host + '/auth/google'; 
+      //  $window.location = $window.location.protocol + '//' + $window.location.host + '/auth/google';
+            
+       $window.location = 'https://meanstackapplicaion.herokuapp.com' + '/auth/google';
     }
     
     this.doLogin = function(loginData){
