@@ -133,7 +133,7 @@ module.exports = function (router) {
                         res.json({ success: false, message: 'Account is not yet activated please check your e-mail for activation of link.',expired:true});
 
                     } else {
-                        var token = jwt.sign({ username: user.username, email: user.email }, secret, { expiresIn: '24s'});
+                        var token = jwt.sign({ username: user.username, email: user.email }, secret, { expiresIn: '24h'});
                         res.json({ success: true, message: 'User Authenticate!', token: token});
 
                     }
